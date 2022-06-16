@@ -34,7 +34,7 @@ contract primitiveDataTypes {
     uint8 public uInt8 = 1;
     uint public uInt256 = 45667; // also uint is an alias for uint256
  
-    /*
-    
+
+
 
 }
