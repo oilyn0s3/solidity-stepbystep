@@ -32,8 +32,33 @@ contract primitiveDataTypes {
     */
 
     uint8 public uInt8 = 1;
-    uint public uInt256 = 45667; // also uint is an alias for uint256
- 
+    uint public uInt256 = 45667; // also, uint is an alias for uint256
+    
+    /* 
+    Coming to int, it allows negative numbers as well.
+
+    int8 ranges from -2**8 to 2**7 -1 
+    ... etc ...
+    int128 ranges from -2**128 to 2**127 -1 
+    int256 ranges from -2**256 to 2**255 -1
+    */
+
+    int128 public Int128 = -12;
+    int public Int256 = 324; // just like uint, int is an alias for int256
+
+    // we also have a method to find min and max value of int or any data type
+    int public minInt = type(int).min;
+    int public maxInt = type(int).max;
+
+    // a new data type address 
+    address public someAccountAddress =  0x29e18d29E70eBCdFCA3dBb5010Ce09c762D6aD30; 
+    // this is a real address, send me some crypto currencies ;)
+
+    //default values
+    bool public defaultBool; // false
+    uint public defaultUint; // 0
+    int public defaultInt; // 0
+    address public defaultAddr; // 0x0000000000000000000000000000000000000000
 
 
 
