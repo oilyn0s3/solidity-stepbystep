@@ -9,7 +9,7 @@ some are ccommon ones found in many other languages.
     - uint 
     - int
     - address
-
+    - string
 let's not discuss them now :)
 */
 
@@ -50,12 +50,15 @@ contract primitiveDataTypes {
     int public minInt = type(int).min;
     int public maxInt = type(int).max;
 
+    string public someName = "CrazyFox"; // string datatype
+
     // a new data type address 
     address public someAccountAddress =  0x29e18d29E70eBCdFCA3dBb5010Ce09c762D6aD30; 
     // this is a real address, send me some crypto currencies ;)
 
-    //default values
-    bool public defaultBool; // false
+    //variables are given default values if they are left unassigned
+
+    bool public defaultBoo; // false
     uint public defaultUint; // 0
     int public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
