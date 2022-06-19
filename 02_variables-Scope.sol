@@ -17,7 +17,7 @@ pragma solidity ^0.8.0;
 contract Variables {
 
     // state variables
-    string public meSome = "aaaah";
+    string public meSome = "aaaah"; // public variables = gas free 
     uint public meNum = 69;
 
     function doSomethingtoMe() public view { // kinky
