@@ -10,7 +10,7 @@ contract SimpleStorage { // because it only reads and writes state variables
 
     The functions which change the value of a state variable are called 
     setter functions. Calling a setter function initiates a transaction,
-    which costs gas. More the cumputation inside a setter function more gas it consumes.
+    which costs gas or wei. More the cumputation inside a setter function more gas it consumes.
 
     */
 
@@ -23,7 +23,7 @@ contract SimpleStorage { // because it only reads and writes state variables
     
     Getter functions just read the data from the blockchain, it does not edit the state of the 
     blockchain. It just read the state variables without sending transactions hence not consuming
-    any gas. The have "view" visibility.
+    any gas or wei. The have "view" visibility.
     
     */
 
