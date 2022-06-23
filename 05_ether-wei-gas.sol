@@ -22,7 +22,7 @@ contract EtherCostMumboJumbo{
 
     uint public oneEther = 1 ether; // ether is also a unit and this will hold 1000000000000000000 as a value because 1 ether is made of 10^18 wei 
     bool public isOneEther = 1 ether == 1e18; // this would also be true 
-
+    
 
 
 
