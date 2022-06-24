@@ -17,5 +17,19 @@ pragma solidity ^0.8.0;
 
 contract GasComputation {
 
-    
+    uint public i = 0;
+    /* 
+        Something happens when you use up all the gas given by you.
+        That thing is 
+            - the transaction fails
+            - state changes are undone
+            - but the gas used up during the execution will not be refunded
+    */
+    function mrRunForever() public {
+        // you know the drill of infinite loops, these will do the trick
+        // and BOOM! transaction fails.... ;)
+        while(true) {
+            i += 1;
+        }
+    }
 }
