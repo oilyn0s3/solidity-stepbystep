@@ -10,8 +10,7 @@ pragma solidity ^0.8.0;
             + decalred outside the function
             + stored on the blockchain
         - global
-            + global is global, it mostly provides information about 
-              the blockchain eg. msg.sender .
+            + global is global, it mostly provides information about the blockchain eg. msg.sender .
 */
 
 contract Variables {

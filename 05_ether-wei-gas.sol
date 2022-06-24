@@ -27,3 +27,11 @@ contract EtherCostMumboJumbo{
 
 
 }
+
+/*
+    As I've mentioned above interaction and deployment of a contract requires some ether.
+    It is 
+
+contract GasComputation {
+
+}
