@@ -26,3 +26,7 @@ contract Intro {
 
 }
 
+/*
+    For more information about Solidity's source file structure 
+    checkout https://docs.soliditylang.org/en/develop/layout-of-source-files.html
+*/
