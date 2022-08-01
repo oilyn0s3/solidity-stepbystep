@@ -1,8 +1,19 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-// well there is not much to arrays, atleast in terms of theory
-// we can create arrays of any datatype by putting a pair of []
+/*
+    Arrays, mappings and structs are all reference types. Unlike value types (e.g. booleans or integers) 
+    reference types don't store their value directly. Instead, they store the location where the value is being stored. 
+    Multiple reference type variables could reference the same location, and a change in one variable would affect the others, 
+    therefore they need to be handled carefully.
+
+    In Solidity, an array stores an ordered list of values of the same type that are indexed numerically.
+
+    There are two types of arrays, compile-time fixed-size and dynamic arrays. 
+    For fixed-size arrays, we need to declare the size of the array before it is compiled. 
+    The size of dynamic arrays can be changed after the contract has been compiled.
+
+*/
 
 contract Array {
 
