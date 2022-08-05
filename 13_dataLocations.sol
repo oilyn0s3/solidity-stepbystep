@@ -20,7 +20,8 @@ pragma solidity ^0.8.8
         - Storage: + Values stored in storage are stored permanently on the blockchain and, 
                      therefore, are expensive to use. 
                    + State variables are always stored in storage.
-                   + 
+                   + Assignments from storage to local storage also create references, not copies.
+                   + Assignments between storage and memory (or calldata) create independent copies, not references.
         
         - Memory: + Values stored in memory are only stored temporarily and are not on the blockchain. 
                   + They only exist during the execution of an external function and are discarded afterward. 
@@ -29,6 +30,9 @@ pragma solidity ^0.8.8
                   + Assignments from memory to memory create references instead of copies. If you change the value 
                     in one variable, the value of all other variables that reference the same data will be changed.
         
-        - Calldata: Calldata stores function arguments. Like memory, calldata is only stored temporarily 
-                    during the execution of an external function. In contrast to values stored in memory, 
-                    values stored in calldata can not be changed. Calldata is the cheapest data location to use.
+        - Calldata: + Calldata stores function arguments. 
+                    + Like memory, calldata is only stored temporarily during the execution of an external function. 
+                    + In contrast to values stored in memory, values stored in calldata can not be changed. 
+                    + Calldata is the cheapest data location to use.
+
+*/
